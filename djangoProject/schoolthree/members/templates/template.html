@@ -6,12 +6,24 @@
 </head>
 
 <body>
-{% for y in fruits %}
-<h1>{{y}}</h1>
-{% endfor %}
 
 
-<p>In views.py you can see what the fruits variable looks like.</p>
+<ul>
+    {% for x in fruits%}
+        <li style="
+        color: {% cycle 'red' 'blue' 'green' 'pink' as mycolor%};
+        background: {% cycle 'grey' 'beige' 'coral' 'brown' as mybg %};
+        ">
+            {{x}}
+        </li>
+    {% if x == "Mango" %}
+        {% resetcycle mybg%}
+    {% endif %}
+    {% endfor %}
+
+</ul>
+
+
 </body>
 
 </html>
