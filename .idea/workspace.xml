@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33350e31-4023-4692-a47e-1a72198b8c64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/members/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/members/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/members/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/members/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Basic_Django.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/members/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/members/templates/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/members/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/members/views.py" afterDir="false" />
     </list>

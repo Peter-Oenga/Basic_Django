@@ -9,6 +9,7 @@
 
 
 <ul>
+    {{table_testing}}
     {% for x in fruits%}
         <li style="
         color: {% cycle 'red' 'blue' 'green' 'pink' as mycolor%};
@@ -21,8 +22,76 @@
     {% endif %}
     {% endfor %}
 
+    {% if greeting >= 7 %}
+    <h2>Hello Mr.President</h2>
+    {% endif %}
+
+
+
+</ul>
+{% for y in cars %}
+<h1>{{y.brand}}</h1>
+<p>{{y.model}}</p>
+<p>{{y.year}}</p>
+{% endfor %}
+
+{% for z in test_members reversed%}
+<h1>{{z.id}}</h1>
+<p>
+    {{z.firstname}}
+     {{z.lastname}}
+</p>
+{% endfor %}
+
+<ul>
+    {% for w in empty_test_object %}
+    <li>{{w.firstname}}</li>
+    {% empty %}
+
+    <li>No members</li>
+
+    {% endfor %}
 </ul>
 
+<ul>
+    {% for w in empty_test_object %}
+    <li>{{w.firstname}}</li>
+    {% empty %}
+
+    <li>No members</li>
+
+    {% endfor %}
+</ul>
+
+
+<ul>
+    {% for w in friends %}
+
+    <li
+            {% if forloop.last %}
+            style="background-color:lightpink;",
+            {% endif %}
+    >
+        {{w}}
+    </li>
+    {% endfor %}
+</ul>
+
+<table border="1">
+    <tr>
+        <th style="color:blue;">ID</th>
+        <th>FIRST_NAME</th>
+        <th>LAST_NAME</th>
+    </tr>
+
+    {% for x in table_testing %}
+    <tr>
+        <td>{{x.id}}</td>
+        <td>{{x.firstname}}</td>
+        <td>{{x.lastname}}</td>
+    </tr>
+    {% endfor %}
+</table>
 
 </body>
 

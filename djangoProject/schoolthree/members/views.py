@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from . models import Member
+from django.db.models import Q
 
 # Create your views here.
 
@@ -25,9 +26,33 @@ def main(request):
     return HttpResponse(template.render())
 
 def testing(request):
-    testingmembers = Member.objects.all().values()
+    testing_members = Member.objects.all().values()
+    table_testing = Member.objects.filter(Q(firstname='Peter') | Q(lastname='Saumu')).values()
     template = loader.get_template('template.html')
     context = {
-        'fruits': ['Orange', 'Mango', 'Apple', 'Cherry']
+        'fruits': ['Orange', 'Mango', 'Apple', 'Cherry'],
+        'table_testing': table_testing,
+        'greeting': 3,
+        'empty_test_object': [],
+        'friends': ['Steve', 'DUdu', 'Chris', 'John', 'Makos'],
+        'test_members': testing_members,
+        'cars': [
+            {
+                'brand': 'Ford',
+                'model': 'Mustang',
+                'year': '1964',
+            },
+            {
+                'brand': 'Ford',
+                'model': 'Bronco',
+                'year': '1970',
+            },
+            {
+                'brand': 'Volvo',
+                'model': 'P1800',
+                'year': '1964',
+            }
+        ]
+
     }
     return HttpResponse(template.render(context, request))
