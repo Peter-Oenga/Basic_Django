@@ -1,10 +1,13 @@
+{% load static %}
 <! DOCTYPE html>
 
 <html>
 <head>
     <title>Testing File</title>
-</head>
+    <link rel="stylesheet" href="{% static 'global.css' %}">
 
+</head>
+<h1>WELCOME TO HTML TESTING</h1>
 <body>
 
 
@@ -83,7 +86,7 @@
         <th>FIRST_NAME</th>
         <th>LAST_NAME</th>
     </tr>
-
+    {% for x in start_with %}
     {% for x in table_testing %}
     <tr>
         <td>{{x.id}}</td>
@@ -91,8 +94,9 @@
         <td>{{x.lastname}}</td>
     </tr>
     {% endfor %}
+    {% endfor %}
 </table>
-
+{{orderBy}}
 </body>
 
 </html>

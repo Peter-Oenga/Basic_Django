@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33350e31-4023-4692-a47e-1a72198b8c64" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Basic_Django.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/members/templates/master.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/members/templates/master.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/members/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/members/templates/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/members/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/members/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/schoolthree/w3schools1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/schoolthree/w3schools1/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,5 +54,16 @@
       <updated>1710616305306</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/djangoProject/schoolthree/w3schools1/settings.py</url>
+          <line>131</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

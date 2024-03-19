@@ -28,13 +28,17 @@ def main(request):
 def testing(request):
     testing_members = Member.objects.all().values()
     table_testing = Member.objects.filter(Q(firstname='Peter') | Q(lastname='Saumu')).values()
+    start_with = Member.objects.filter(firstname__startswith='P').values()
+    orderBy = Member.objects.all().order_by('-firstname').values()
     template = loader.get_template('template.html')
     context = {
         'fruits': ['Orange', 'Mango', 'Apple', 'Cherry'],
+        'start_with': start_with,
         'table_testing': table_testing,
         'greeting': 3,
         'empty_test_object': [],
         'friends': ['Steve', 'DUdu', 'Chris', 'John', 'Makos'],
+        'orderBy': orderBy,
         'test_members': testing_members,
         'cars': [
             {
